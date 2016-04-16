@@ -28,17 +28,9 @@ set backspace=2		        " More powerful backspacing
 set encoding=utf8           " Use UTF-8 as default encoding
 set number                  " Show line numbers
 set numberwidth=3           " Width of numbers column
+set colorcolumn=80          " Set a vertical line in the 80th column (standard)
 
 " Key mappings
-" Map auto complete of (, ", ', [
-inoremap $1 ()<esc>i
-inoremap $2 []<esc>i
-inoremap $3 {}<esc>i
-inoremap $4 {<esc>o}<esc>O
-inoremap $q ''<esc>i
-inoremap $e ""<esc>i
-inoremap $t <><esc>i
-
 " Duplicate lines, similar to Eclipse
 noremap <C-S-Up> YP
 noremap <C-S-Down> YP
