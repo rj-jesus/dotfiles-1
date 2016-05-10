@@ -1,7 +1,32 @@
-export PATH="/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:$(brew --prefix coreutils)/libexec/gnubin"
+
+# Aliases to use gcc instead of clang
+export CC=/usr/local/bin/gcc-5
+export CXX=/usr/local/bin/g++-5
+export CPP=/usr/local/bin/cpp-5
+export LD=/usr/local/bin/gcc-5
+alias c++=/usr/local/bin/c++-5
+alias g++=/usr/local/bin/g++-5
+alias gcc=/usr/local/bin/gcc-5
+alias cpp=/usr/local/bin/cpp-5
+alias ld=/usr/local/bin/gcc-5
+alias cc=/usr/local/bin/gcc-5
+
+# Uncomment the following if you want to use clang
+#export CC=/usr/bin/gcc
+#export CXX=/usr/bin/g++
+#export CPP=/usr/bin/cpp
+#export LD=/usr/bin/ld
+#alias c++=/usr/bin/c++
+#alias g++=/usr/bin/g++
+#alias gcc=/usr/bin/gcc
+#alias cpp=/usr/bin/cpp
+#alias cc=/usr/bin/gcc
+#alias ld=/usr/bin/ld
 
 # Aliases
 alias finder="open -a Finder"
+#alias openterminal="cd "$(osascript -e 'tell app "Finder" to POSIX path of (insertion location as alias)')""
 alias cask="brew cask"
 alias lla='ls -la'
 alias mkdir='mkdir -pv'
