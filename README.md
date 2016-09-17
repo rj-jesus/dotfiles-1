@@ -1,4 +1,5 @@
 # dotfiles
+:pencil2: My dotfiles
 These are the dotfiles and Sublime Text 3 preferences and packages I use. It's a very simple repository. Feel free to do pull requests and other sugestions.
 
 Just clone the contents of the repository to your ```$HOME``` folder.
@@ -18,5 +19,6 @@ mv ~/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 
 mv ~/Package\ Control.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User
 ```
 
-Check my friend's repository from where I got some ideas:
+Check these repositories from where I got some ideas:
 [Ricardo Jesus](https://github.com/RJ-Jesus/dotfiles)
+[Brooke Kuhlmann](https://github.com/bkuhlmann/dotfiles)
