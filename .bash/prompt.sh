@@ -43,7 +43,7 @@ _prompt() {
             PS1+="\[$GOLD\]\[$GREY_BACKGROUND\]\[$BOLD\]$(_git_branch_info)\[$NORMAL\]" # Git Branch Info.
         fi
 
-        PS1+="\[$BG_EXIT\] $OS_SYMBOL \[$NORMAL\] "
+        PS1+="\n\[$BG_EXIT\] $OS_SYMBOL \[$NORMAL\] "
     }
 
     PROMPT_COMMAND=ps1

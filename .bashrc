@@ -7,7 +7,14 @@
 # Command Prompt (http://jonisalonen.com/2012/your-bash-prompt-needs-this)
 . "$HOME/.bash/prompt.sh"
 
-export PATH="/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/coreutils/8.25/bin/"
+export PATH="/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/coreutils/8.25/bin/:/usr/local/opt/curl/bin"
+export MANPATH="$MANPATH:/usr/local/man/"
+export VLC_PLUGIN_PATH="/Applications/VLC.app/Contents/MacOS/plugins"
+
+# Homebrew privacy
+export HOMEBREW_NO_ANALYTICS=1
+export HOMEBREW_NO_INSECURE_REDIRECT=1
+export HOMEBREW_CASK_OPTS=--require-sha
 
 # Sugestion in case using a command not found
 if brew command command-not-found-init > /dev/null; then
@@ -15,16 +22,16 @@ if brew command command-not-found-init > /dev/null; then
 fi
 
 # Aliases to use gcc instead of clang
-export CC=/usr/local/bin/gcc-5
-export CXX=/usr/local/bin/g++-5
-export CPP=/usr/local/bin/cpp-5
-export LD=/usr/local/bin/gcc-5
-alias c++=/usr/local/bin/c++-5
-alias g++=/usr/local/bin/g++-5
-alias gcc=/usr/local/bin/gcc-5
-alias cpp=/usr/local/bin/cpp-5
-alias ld=/usr/local/bin/gcc-5
-alias cc=/usr/local/bin/gcc-5
+export CC=/usr/local/bin/gcc-6
+export CXX=/usr/local/bin/g++-6
+export CPP=/usr/local/bin/cpp-6
+export LD=/usr/local/bin/gcc-6
+alias c++=/usr/local/bin/c++-6
+alias g++=/usr/local/bin/g++-6
+alias gcc=/usr/local/bin/gcc-6
+alias cpp=/usr/local/bin/cpp-6
+alias ld=/usr/local/bin/gcc-6
+alias cc=/usr/local/bin/gcc-6
 
 # Uncomment the following if you want to use clang
 #export CC=/usr/bin/gcc
@@ -44,3 +51,4 @@ if which brew > /dev/null && [ -f "$(brew --prefix)/share/bash-completion/bash_c
 elif [ -f /etc/bash_completion ]; then
     source /etc/bash_completion;
 fi;
+

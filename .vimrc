@@ -22,6 +22,7 @@ set cmdheight=1             " Height of command line
 set laststatus=2            " Always show status line on last window
 set numberwidth=4           " Minimum cols for line number gutter
 set colorcolumn=80          " Set a vertical line in the 80th column (standard)
+set cursorline              " Highlight current line
 set number                  " Show line numbers
 syntax on
 
@@ -47,18 +48,21 @@ call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'honza/vim-snippets'
-Plugin 'SirVer/ultisnips'
+"Plugin 'SirVer/ultisnips'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
+Plugin 'scrooloose/nerdtree'
+Plugin 'JamshedVesuna/vim-markdown-preview'
+Plugin 'davidhalter/jedi-vim'
 
 call vundle#end()
 
 filetype on
 
 " Ultisnips configuration
-let g:UltiSnipsExpandTrigger="<Tab>"
-let g:UltiSnipsJumpForwardTrigger="<C-b>"
-let g:UltiSnipsJumpBackwardTrigger="<C-z>"
+"let g:UltiSnipsExpandTrigger="<Tab>"
+"let g:UltiSnipsJumpForwardTrigger="<C-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<C-z>"
 
 
 " LightLine configuration
@@ -112,3 +116,6 @@ function! LightLineFilename()
          \ ('' != expand('%:t') ? expand('%:t') : '[No Name]') .
          \ ('' != LightLineModified() ? ' ' . LightLineModified() : '')
 endfunction
+
+" Mardown-preview configuration
+let vim_markdown_preview_github=0
