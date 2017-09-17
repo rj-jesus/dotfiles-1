@@ -7,7 +7,7 @@
 # Command Prompt (http://jonisalonen.com/2012/your-bash-prompt-needs-this)
 . "$HOME/.bash/prompt.sh"
 
-export PATH="/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/coreutils/8.25/bin/:/usr/local/opt/curl/bin"
+export PATH="/usr/local/bin:/usr/local/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/coreutils/8.25/bin:/usr/local/opt/curl/bin:/usr/local/sbin"
 export MANPATH="$MANPATH:/usr/local/man/"
 export VLC_PLUGIN_PATH="/Applications/VLC.app/Contents/MacOS/plugins"
 
@@ -22,16 +22,16 @@ if brew command command-not-found-init > /dev/null; then
 fi
 
 # Aliases to use gcc instead of clang
-export CC=/usr/local/bin/gcc-6
-export CXX=/usr/local/bin/g++-6
-export CPP=/usr/local/bin/cpp-6
-export LD=/usr/local/bin/gcc-6
-alias c++=/usr/local/bin/c++-6
-alias g++=/usr/local/bin/g++-6
-alias gcc=/usr/local/bin/gcc-6
-alias cpp=/usr/local/bin/cpp-6
-alias ld=/usr/local/bin/gcc-6
-alias cc=/usr/local/bin/gcc-6
+export CC=/usr/local/bin/gcc-7
+export CXX=/usr/local/bin/g++-7
+export CPP=/usr/local/bin/cpp-7
+export LD=/usr/local/bin/gcc-7
+alias c++=/usr/local/bin/c++-7
+alias g++=/usr/local/bin/g++-7
+alias gcc=/usr/local/bin/gcc-7
+alias cpp=/usr/local/bin/cpp-7
+alias ld=/usr/local/bin/gcc-7
+alias cc=/usr/local/bin/gcc-7
 
 # Uncomment the following if you want to use clang
 #export CC=/usr/bin/gcc

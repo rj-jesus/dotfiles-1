@@ -13,12 +13,12 @@ alias egrep='egrep --color=auto'
 # Shortcuts
 alias ua="cd ~/Documents/UA"
 alias proj="cd ~/Documents/Projects"
-alias iia="cd ~/Documents/UA/3_year/iia"
-alias so="cd ~/Documents/UA/3_year/so"
-alias ams="cd ~/Documents/UA/3_year/ams"
-alias _ar="cd ~/Documents/UA/3_year/ar"
-alias ihc="cd ~/Documents/UA/3_year/ihc"
-alias pei="cd ~/Documents/UA/3_year/pei"
+alias viegy="cd ~/Documents/Projects/viegy"
+alias cv="cd ~/Documents/UA/4_year/cv"
+alias ara="cd ~/Documents/UA/4_year/ara"
+alias aca="cd ~/Documents/UA/4_year/aca"
+alias seg="cd ~/Documents/UA/4_year/security"
+alias edc="cd ~/Documents/UA/4_year/edc"
 
 # Easier navigation
 alias 1.="cd .."
@@ -41,3 +41,8 @@ alias afk="/System/Library/CoreServices/Menu\ Extras/User.menu/Contents/Resource
 
 # Reload the shell (i.e. invoke as a login shell)
 alias reload="exec $SHELL -l"
+
+# Airport utility
+alias airport-bssid="$HOME/.utils/airport-bssid-master/Build/Release/airport-bssid"
+alias sardoal-floor="$HOME/.utils/airport-bssid-master/Build/Release/airport-bssid en0 9c:97:26:e5:08:05 234598508"
+alias sardoal-first="$HOME/.utils/airport-bssid-master/Build/Release/airport-bssid en0 94:44:52:c2:33:ba 234598508"

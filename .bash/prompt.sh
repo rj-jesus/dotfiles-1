@@ -1,5 +1,11 @@
 # BASH PROMPT
 
+add_venv_info () {
+    if [[ "$VIRTUAL_ENV" != "" ]]; then
+        PS1="(`basename \"$VIRTUAL_ENV\"`) $PS1"
+    fi 
+}
+
 _prompt() {
     readonly OS_SYMBOL=''
     readonly GIT_BRANCH_SYMBOL='⎇ '
@@ -36,14 +42,16 @@ _prompt() {
             local BG_EXIT="$RED_BACKGROUND"
         fi
 
-        PS1="\[$BLUE\]\u@\h \[$NORMAL\]" # User@host
-        PS1+="\[$WHITE\]\[$LIGHT_GREY_BACKGROUND\] \w \[$NORMAL\]" # Directory
+        PS1="\[$LIGHT_RED\]\u \[$WHITE\]at \[$LIGHT_BLUE\]\h \[$NORMAL\]" # User@host
+        PS1+="\[$WHITE\]in \[$LIGHT_GREY_BACKGROUND\] \w \[$NORMAL\]" # Directory
 
         if [[ -z $branch ]]; then
             PS1+="\[$GOLD\]\[$GREY_BACKGROUND\]\[$BOLD\]$(_git_branch_info)\[$NORMAL\]" # Git Branch Info.
         fi
 
         PS1+="\n\[$BG_EXIT\] $OS_SYMBOL \[$NORMAL\] "
+
+        add_venv_info
     }
 
     PROMPT_COMMAND=ps1
