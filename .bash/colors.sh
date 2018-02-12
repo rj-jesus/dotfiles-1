@@ -36,7 +36,7 @@
 
 # Default: "exfxcxdxbxegedabagacad"
 export CLICOLOR=1
-export LSCOLORS=GxFxCxDxBxegedabagaced
+export LSCOLORS=CxFxGxDxBxegedabagaced
 
 export P_BOLD='\[$(tput bold)\]'
 

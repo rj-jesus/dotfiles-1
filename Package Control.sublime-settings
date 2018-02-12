@@ -5,18 +5,9 @@
 	],
 	"installed_packages":
 	[
-		"GitGutter",
-        "CTags",
-        "ApplySyntax",
-        "ChangeQuotes",
-        "BracketHighlighter",
-        "Gutter Color",
-        "AutoFileName",
-        "Autoprefixer",
-        "Web Inspector",
-        "Markdown Extended",
-        "CSScomb",
-        "HTML-CSS-JS Prettify",
-        "Theme - Flatland" 
+		"NeoVintageous",
+		"One Dark Color Scheme",
+		"One Dark Material - Theme",
+		"Package Control"
 	]
 }

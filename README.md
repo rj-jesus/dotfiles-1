@@ -15,12 +15,19 @@ Files:
 - `.Xresources`: X11 terminal configuration file.
 - `.ssh/`: folder with SSH configuration.
 - `.utils/`: folder with some utilities.
+- `Package Control.sublime-settings`: Sublime Text 3 installed packages.
+- `Preferences.sublime-settings`: Sublime Text 3 prefereces.
 - `Vouga.itermcolors`: iTerm 2 color theme.
 - `Vouga.terminal`: macOS Terminal.app color theme.
 
 Just clone the contents of the repository to your ```$HOME``` folder.
 ```
 git clone https://github.com/pbmartins/dotfiles ~/
+```
+
+Copy Sublime Text 3 files:
+```
+cp *.sublime-settings ~/Library/Application Support/Sublime Text 3/Packages/
 ```
 
 Don't forget to edit your git personal info using:
@@ -31,10 +38,11 @@ git config --global user.email youremail@example.com
 
 To apply Vim preferences and install packages, just run:
 ```
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 vim +PluginInstall +qall
 ```
 
-or open Vim window and run:
+or after cloning the Vundle repo, open Vim window and run:
 ```
 :PluginInstall
 ```
