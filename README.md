@@ -25,9 +25,14 @@ Just clone the contents of the repository to your ```$HOME``` folder.
 git clone https://github.com/pbmartins/dotfiles ~/
 ```
 
-Copy Sublime Text 3 files:
+If you haven't, first install Sublime Text 3 Package Control:
 ```
-cp *.sublime-settings ~/Library/Application Support/Sublime Text 3/Packages/
+curl -L https://packagecontrol.io/Package%20Control.sublime-package >> ~/Library/Application Support/Sublime Text 3/Installed\ Packages/Package\ Control.sublime-package
+```
+
+After having installed Package Control, copy Sublime Text 3 files:
+```
+cp *.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 3/Packages/User/
 ```
 
 Don't forget to edit your git personal info using:
@@ -47,8 +52,8 @@ or after cloning the Vundle repo, open Vim window and run:
 :PluginInstall
 ```
 
-Check these repositories from where I got some ideas:  
-[Ricardo Jesus](https://github.com/RJ-Jesus/dotfiles)  
+Check these repositories from where I got some ideas:
+[Ricardo Jesus](https://github.com/RJ-Jesus/dotfiles)
 [Brooke Kuhlmann](https://github.com/bkuhlmann/dotfiles)
 
 Pedro Martins, 2018
