@@ -26,6 +26,10 @@ set cursorline              " Highlight current line
 set number                  " Show line numbers
 syntax on
 
+if has('gui_running')
+  set guifont=Consolas:h14
+endif
+
 " Configs
 set encoding=utf8           " Use UTF-8 as default encoding
 scriptencoding utf-8
@@ -52,7 +56,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'itchyny/lightline.vim'
 Plugin 'tpope/vim-fugitive'
 Plugin 'scrooloose/nerdtree'
-Plugin 'JamshedVesuna/vim-markdown-preview'
+"Plugin 'JamshedVesuna/vim-markdown-preview'
 Plugin 'davidhalter/jedi-vim'
 
 call vundle#end()
@@ -116,6 +120,3 @@ function! LightLineFilename()
          \ ('' != expand('%:t') ? expand('%:t') : '[No Name]') .
          \ ('' != LightLineModified() ? ' ' . LightLineModified() : '')
 endfunction
-
-" Mardown-preview configuration
-let vim_markdown_preview_github=0
